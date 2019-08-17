@@ -49,11 +49,11 @@ def checkout(cart, coupons)
   
   total = 0
   
-   final_cart.each do |item, value|
+  final_cart.each do |item, value|
   total += value[:price] * value[:count]
 end
 
- if total > 100.0 == true
+if total > 100.0 == true
   total = (total * 0.90).round(2)
 end
 total
